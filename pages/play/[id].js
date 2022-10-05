@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 export default function Home() {
 	const router = useRouter();
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 			<ul className={styles.container}>
-				<li className={styles["hover-underline-animation"]} onClick={()=> router.push('/play')}>PLAY</li>
+				<li className={styles["hover-underline-animation"]} onClick={()=> router.push('/play/1')}>PLAY</li>
 			</ul>
 		</div>
   )

@@ -1,0 +1,46 @@
+.body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	background-color: black;
+}
+
+.flag{
+	border: #fff 1px solid;
+}
+
+.choices {
+	display: flex;
+	gap: 100px;
+	margin: 50px;
+}
+
+.choice {
+	--color: #fd5331;
+	--hover: #e5ff60;
+	padding: 10px;
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+	color: var(--color);
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.choice:hover,
+.choice:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+.choice:hover,
+.choice:focus {
+	border-color: var(--hover);
+	color: #fff;
+}

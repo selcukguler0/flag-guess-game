@@ -36,7 +36,9 @@ export default function Home() {
 			router.push(`/results`);
 		}
 	};
-
+	if (!currentCountry) {
+		return <div>Loading...</div>;
+	}
 	return (
 		<div className={styles.body}>
 			<Head>
